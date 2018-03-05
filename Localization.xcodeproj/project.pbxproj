@@ -14,8 +14,8 @@
 		7191D487204B3E6000449E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7191D485204B3E6000449E37 /* LaunchScreen.storyboard */; };
 		7191D494204B67D800449E37 /* Indexes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191D493204B67D800449E37 /* Indexes.swift */; };
 		7191D496204B74E700449E37 /* Localizator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191D495204B74E700449E37 /* Localizator.swift */; };
-		7191D499204B758400449E37 /* List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7191D498204B758400449E37 /* List.plist */; };
 		7191D49D204C2A0A00449E37 /* Details.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7191D49C204C2A0A00449E37 /* Details.plist */; };
+		7191D4A4204CEE4B00449E37 /* List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7191D4A6204CEE4C00449E37 /* List.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,9 @@
 		7191D488204B3E6000449E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7191D493204B67D800449E37 /* Indexes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indexes.swift; sourceTree = "<group>"; };
 		7191D495204B74E700449E37 /* Localizator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizator.swift; sourceTree = "<group>"; };
-		7191D498204B758400449E37 /* List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = List.plist; sourceTree = "<group>"; };
 		7191D49C204C2A0A00449E37 /* Details.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Details.plist; sourceTree = "<group>"; };
+		7191D4A5204CEE4B00449E37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/List.plist; sourceTree = "<group>"; };
+		7191D4A7204CEFF900449E37 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/List.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +111,7 @@
 		7191D497204B755800449E37 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7191D498204B758400449E37 /* List.plist */,
+				7191D4A6204CEE4C00449E37 /* List.plist */,
 				7191D49C204C2A0A00449E37 /* Details.plist */,
 			);
 			path = Views;
@@ -168,6 +169,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 7191D470204B3E6000449E37;
 			productRefGroup = 7191D47A204B3E6000449E37 /* Products */;
@@ -186,8 +188,8 @@
 			files = (
 				7191D487204B3E6000449E37 /* LaunchScreen.storyboard in Resources */,
 				7191D49D204C2A0A00449E37 /* Details.plist in Resources */,
-				7191D499204B758400449E37 /* List.plist in Resources */,
 				7191D484204B3E6000449E37 /* Assets.xcassets in Resources */,
+				7191D4A4204CEE4B00449E37 /* List.plist in Resources */,
 				7191D482204B3E6000449E37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +227,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		7191D4A6204CEE4C00449E37 /* List.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7191D4A5204CEE4B00449E37 /* en */,
+				7191D4A7204CEFF900449E37 /* es */,
+			);
+			name = List.plist;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -232,6 +243,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -289,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
