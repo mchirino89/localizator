@@ -11,15 +11,13 @@ import UIKit
 class ListViewController: UIViewController {
     
     @IBOutlet weak var namesTableView: UITableView!
-    
-//    let spanishNames = ["Ana", "Bruno", "Juan", "José", "Julia", "Miguel", "Mateo"]
-//    let names = ["Ann", "Bruce", "John", "Joseph", "Jules", "Michael", "Matthew"]
-    typealias listView = Indexes.view.list
-    let names = [].localized(listView.names.rawValue, .List)
+    // Names coming from List.plist
+    let names = [].localized(Indexes.list.names.rawValue, .List)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = listView.title.rawValue.localized(.List)
+        // Single string retrieval thanks to extensions
+        title = Indexes.list.title.rawValue.localized(.List)
     }
     
 }

@@ -12,25 +12,23 @@ struct Localizator {
     
     private static func getViewDictionary(_ forResource: Indexes.dictionary) -> NSDictionary {
         let localizableDictionary: NSDictionary! = {
-            if let path = Bundle.main.path(forResource: forResource.rawValue, ofType: Indexes.fileType) {
-                return NSDictionary(contentsOfFile: path)
+            guard let path = Bundle.main.path(forResource: forResource.rawValue, ofType: Indexes.fileType) else {
+                fatalError("\(forResource.rawValue).\(Indexes.fileType) NOT found")
             }
-            fatalError("\(forResource.rawValue) file NOT found")
+            return NSDictionary(contentsOfFile: path)
         }()
         return localizableDictionary
     }
     
     static func localized(_ indexKey: String, _ viewResource: Indexes.dictionary) -> Array<String> {
         let viewDictionary = getViewDictionary(viewResource)
-        print(indexKey)
         if let localizedContainer = viewDictionary.value(forKey: indexKey) as? Array<String> {
             return localizedContainer
         } else if let localizedItem = viewDictionary.value(forKey: indexKey) as? String {
             return [localizedItem]
-        } else {
-            assertionFailure("Missing translation for: \(indexKey)")
-            return ["dhufvdfiusdiubdsf"]
         }
+        assertionFailure("Missing translation for: \(indexKey)")
+        return ["dhufvdfiusdiubd@#%$#@@@@!#@#$%#$%sf"]
     }
 }
 
