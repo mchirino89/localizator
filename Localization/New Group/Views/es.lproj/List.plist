@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>Nombres españoles</string>
+	<key>names</key>
+	<array>
+		<string>Ana</string>
+		<string>Bruno</string>
+		<string>Juan</string>
+		<string>José</string>
+		<string>Julia</string>
+		<string>Miguel</string>
+		<string>Mateo</string>
+	</array>
+</dict>
+</plist>
